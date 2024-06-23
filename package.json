@@ -4,9 +4,25 @@
   "description": "Gaming social network",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "nodemon src/index.js",
+    "test": "mocha tests/*.spec.js",
+    "lint": "eslint src/*"
   },
   "type": "module",
   "author": "Lior King",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2",
+    "install": "^0.13.0",
+    "nodemon": "^3.1.4"
+  },
+  "devDependencies": {
+    "@types/chai": "^4.3.16",
+    "@types/mocha": "^10.0.7",
+    "chai": "^5.1.1",
+    "eslint": "^9.5.0",
+    "globals": "^15.6.0",
+    "mocha": "^10.4.0",
+    "typescript-eslint": "^7.13.1"
+  }
 }
